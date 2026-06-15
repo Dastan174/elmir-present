@@ -7,7 +7,7 @@ export default function Chat({ visible, onClose }) {
   const [showTyping, setShowTyping] = useState(false); // для левого сообщения
 
   const fullMessage =
-    "Ты знаешь, иногда я ловлю себя на мысли: как мне повезло, что ты есть.";
+    "Иногда я думаю, что ты — самое лучшее, что случилось со мной.";
 
   useEffect(() => {
     if (!visible) return;

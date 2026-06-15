@@ -91,32 +91,26 @@ const Page = () => {
         <>
           <Typewritter />
           <HoldHeart />
+          <div className={styles.img3}>
+            <Image src="/images/six.png" fill alt="open" loading="lazy" />
+          </div>
           <Story />
           <Insta />
-          <div className={styles.img3}>
-            <Image src="/images/six.webp" fill alt="open" loading="lazy" />
-          </div>
           <PhotoReveal />
+          <OpenChat />
           <div className={styles.img1}>
             <Image src="/images/love.png" fill alt="open" loading="lazy" />
           </div>
-          <Slider />
-          <div className={styles.img3}>
-            <Image src="/images/four.png" fill alt="open" loading="lazy" />
-          </div>
-          <OpenChat />
-          <div className={styles.img2}>
-            <Image src="/images/lake.webp" fill alt="open" loading="lazy" />
-          </div>
-          <Balloons />
           {showMemory && (
             <MemoryButton onClose={() => setShowMemory(false)} /> // ✅ передаем функцию
           )}
+          <Slider />
           <VideoAdil link="https://www.youtube.com/embed/Zjm4cycc2SY?autoplay=0&mute=1&controls=1&rel=0" />
-          <VideoAdil link="https://www.youtube.com/embed/vpuCVn0EQgU?autoplay=0&mute=1&controls=1&rel=0" />
-          <div className={styles.img1}>
-            <Image src="/images/winter.webp" fill alt="open" loading="lazy" />
+          <Balloons />
+          <div className={styles.img3}>
+            <Image src="/images/four.png" fill alt="open" loading="lazy" />
           </div>
+          <VideoAdil link="https://www.youtube.com/embed/vpuCVn0EQgU?autoplay=0&mute=1&controls=1&rel=0" />
           <LastChat />
           <div className={styles.img2}>
             <Image src="/images/last.png" fill alt="open" loading="lazy" />

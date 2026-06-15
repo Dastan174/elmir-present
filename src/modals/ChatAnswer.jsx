@@ -7,9 +7,8 @@ export default function ChatAnswer({ visible, onClose }) {
   const [showTyping, setShowTyping] = useState(false);
 
   const baynurMessage =
-    "Ты знаешь, иногда я ловлю себя на мысли: как мне повезло, что ты есть.";
-  const begimayMessage =
-    "Мне тоже везёт. Ты делаешь мою жизнь легче и счастливее😊";
+    "Иногда я думаю, что ты — самое лучшее, что случилось со мной.";
+  const begimayMessage = "Я просто рядом… и мне уже хорошо, когда ты пишешь 😊";
 
   useEffect(() => {
     if (!visible) return;

@@ -5,7 +5,7 @@ import "./typewritter.css";
 
 export default function TypingFeather() {
   const fullText =
-    "Мне приятно просто сидеть рядом с тобой и ничего не делать. Ты делаешь мою жизнь проще и теплее. С тобой хочется быть каждый день.";
+    "Рядом с тобой так спокойно… даже тишина становится тёплой. С тобой хочется просто быть, без слов и лишних мыслей.";
   const [displayedText, setDisplayedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const cursorRef = useRef(null);
