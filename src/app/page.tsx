@@ -12,8 +12,10 @@ import VideoAdil from "../components/videoAdil/VideoAdil";
 import Story from "../components/stories/Story";
 import Insta from "../components/insta/Insta";
 import HoldHeart from "../components/holdHeart/HoldHeart";
+import MemoryButton from "../components/memoryButton/MemoryButton";
 
 const Page = () => {
+  const [showMemory, setShowMemory] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [showRest, setShowRest] = useState(false);
 
@@ -95,11 +97,11 @@ const Page = () => {
             <Image src="/images/six.webp" fill alt="open" loading="lazy" />
           </div>
           <PhotoReveal />
-          <div className={styles.img3}>
-            <Image src="/images/ml.webp" fill alt="open" loading="lazy" />
+          <div className={styles.img1}>
+            <Image src="/images/love.png" fill alt="open" loading="lazy" />
           </div>
           <Slider />
-          <div className={styles.img1}>
+          <div className={styles.img3}>
             <Image src="/images/four.png" fill alt="open" loading="lazy" />
           </div>
           <OpenChat />
@@ -107,13 +109,17 @@ const Page = () => {
             <Image src="/images/lake.webp" fill alt="open" loading="lazy" />
           </div>
           <Balloons />
-          <VideoAdil />
+          {showMemory && (
+            <MemoryButton onClose={() => setShowMemory(false)} /> // ✅ передаем функцию
+          )}
+          <VideoAdil link="https://www.youtube.com/embed/Zjm4cycc2SY?autoplay=0&mute=1&controls=1&rel=0" />
+          <VideoAdil link="https://www.youtube.com/embed/vpuCVn0EQgU?autoplay=0&mute=1&controls=1&rel=0" />
           <div className={styles.img1}>
             <Image src="/images/winter.webp" fill alt="open" loading="lazy" />
           </div>
           <LastChat />
           <div className={styles.img2}>
-            <Image src="/images/end.webp" fill alt="open" loading="lazy" />
+            <Image src="/images/last.png" fill alt="open" loading="lazy" />
           </div>
         </>
       )}

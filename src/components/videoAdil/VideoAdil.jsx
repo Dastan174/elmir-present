@@ -2,7 +2,7 @@
 import "./videoAdil.css";
 import { useState, useEffect } from "react";
 
-const VideoShamil = () => {
+const VideoShamil = ({link}) => {
   const [windowWidth, setWindowWidth] = useState(0);
   const [isClient, setIsClient] = useState(false);
 
@@ -22,7 +22,7 @@ const VideoShamil = () => {
       <h2>Наши воспоминания</h2>
       {windowWidth < 500 ? (
         <iframe
-          src="https://www.youtube.com/embed/6Q9KQi6JjWM?autoplay=0&mute=1&controls=1&rel=0"
+          src={link}
           title="Наши короткие моменты счастья"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

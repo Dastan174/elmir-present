@@ -43,7 +43,7 @@ export default function PhotoReveal() {
         {/* Исходное размытое фото */}
         <Image
           alt="cho"
-          src="/images/reveal.webp"
+          src="/images/reveal.jpg"
           className="blurred-photo"
           width={393}
           height={200}
@@ -53,7 +53,7 @@ export default function PhotoReveal() {
         {/* Чистое фото, которое открывается */}
         <Image
           alt="cho"
-          src="/images/reveal.webp"
+          src="/images/reveal.jpg"
           className="clear-photo"
           width={393}
           height={250}
