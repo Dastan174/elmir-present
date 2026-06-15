@@ -3,11 +3,21 @@ export default function Insta() {
   return (
     <div className="post">
       <div className="post-header">
-        <img className="avatar" src="/images/ava.jpg" alt="avatar" />
+        <img
+          loading="lazy"
+          className="avatar"
+          src="/images/ava.webp"
+          alt="avatar"
+        />
         <span className="username">foreverlove</span>
       </div>
 
-      <img className="post-image" src="/images/insta.jpg" alt="post" />
+      <img
+        loading="lazy"
+        className="post-image"
+        src="/images/insta.webp"
+        alt="post"
+      />
 
       <div className="post-content">
         <div className="actions">

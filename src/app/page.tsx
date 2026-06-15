@@ -83,7 +83,7 @@ const Page = () => {
         className={styles.img3}
         style={{ display: "flex", alignItems: "center" }}
       >
-        <Image priority src="/images/play.png" fill alt="open" />
+        <Image priority src="/images/play.webp" fill alt="open" />
       </div>
 
       {/* Остальные блоки */}
@@ -92,14 +92,26 @@ const Page = () => {
           <Typewritter />
           <HoldHeart />
           <div className={styles.img3}>
-            <Image src="/images/six.png" fill alt="open" loading="lazy" />
+            <Image
+              src="/images/six.webp"
+              fill
+              alt="open"
+              loading="lazy"
+              priority={false}
+            />
           </div>
           <Story />
           <Insta />
           <PhotoReveal />
           <OpenChat />
           <div className={styles.img1}>
-            <Image src="/images/love.png" fill alt="open" loading="lazy" />
+            <Image
+              src="/images/love.webp"
+              fill
+              alt="open"
+              loading="lazy"
+              priority={false}
+            />
           </div>
           {showMemory && (
             <MemoryButton onClose={() => setShowMemory(false)} /> // ✅ передаем функцию
@@ -108,12 +120,24 @@ const Page = () => {
           <VideoAdil link="https://www.youtube.com/embed/Zjm4cycc2SY?autoplay=0&mute=1&controls=1&rel=0" />
           <Balloons />
           <div className={styles.img3}>
-            <Image src="/images/four.png" fill alt="open" loading="lazy" />
+            <Image
+              src="/images/four.webp"
+              fill
+              alt="open"
+              loading="lazy"
+              priority={false}
+            />
           </div>
           <VideoAdil link="https://www.youtube.com/embed/vpuCVn0EQgU?autoplay=0&mute=1&controls=1&rel=0" />
           <LastChat />
           <div className={styles.img2}>
-            <Image src="/images/last.png" fill alt="open" loading="lazy" />
+            <Image
+              src="/images/last.webp"
+              fill
+              alt="open"
+              loading="lazy"
+              priority={false}
+            />
           </div>
         </>
       )}
